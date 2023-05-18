@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Submitpg(props) {
+function Submitpg() {
   const details = JSON.parse(localStorage.getItem('studentData'));
   return (
     <div className="main">
