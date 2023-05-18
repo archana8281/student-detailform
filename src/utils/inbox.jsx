@@ -1,7 +1,7 @@
 const inbox = [
-    { label:' Name : ', value:''},
-    { label:' Age  : ', value:''},
-    { label:' Class : ', value:''},
-    { label:' Mark : ', value:''},
+    { label:' Name : ', value:'name'},
+    { label:' Age  : ', value:'age'},
+    { label:' Class : ', value:'class'},
+    { label:' Mark : ', value:'mark'},
 ];
 export {inbox};

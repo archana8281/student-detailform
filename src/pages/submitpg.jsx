@@ -1,8 +1,12 @@
 import React from 'react'
 
-function Submitpg() {
+function Submitpg(props) {
   return (
-    <div>submitpg</div>
+    <>
+  
+
+    
+    </>
   )
 }
 
