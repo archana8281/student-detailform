@@ -7,13 +7,12 @@ import Button from "../component/button";
 function Index() {
   const [data, setData] = useState({ name: "", age: "", class: "", mark: "" });
   const getData = (e) => {
-    console.log(e)
-    setData({...data,[e.target.name]:e.target.value });
+    setData({ ...data, [e.target.name]: e.target.value });
   };
   const navigate = useNavigate();
   function handleClick(e) {
+    localStorage.setItem("studentData" ,JSON.stringify(data));
     navigate("/submitpg");
-    console.log(data);
   }
 
   return (
@@ -21,7 +20,7 @@ function Index() {
       <h1>Student Form</h1>
       <div className="form">
         {inbox.map((head) => (
-          <Input Label={head.label} name={head.value} fun={getData} Value={data[head.value]} />
+          <Input Label={head.label} name={head.value} fun={getData} />
         ))}
       </div>
       <Button submit={handleClick} />
